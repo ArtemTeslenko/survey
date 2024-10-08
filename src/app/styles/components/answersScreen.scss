@@ -1,0 +1,18 @@
+.answers {
+  &__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333333;
+  }
+
+  &__item {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #333333;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+}

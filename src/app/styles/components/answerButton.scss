@@ -1,0 +1,33 @@
+.answer-button {
+  width: 330px;
+  min-width: 330px;
+  max-width: 330px;
+  height: 64px;
+  padding: 12px 16px;
+  overflow: hidden;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #1a1a1a;
+  background: #eaeef7;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  box-shadow: 2px 2px 6px 0px #543c9740;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    color: #fafafa;
+    border: 1px solid #e6e6e6;
+    background: linear-gradient(
+      165.54deg,
+      #141333 -33.39%,
+      #202261 15.89%,
+      #543c97 55.84%,
+      #6939a2 74.96%
+    );
+  }
+}

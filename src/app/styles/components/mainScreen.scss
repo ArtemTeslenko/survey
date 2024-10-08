@@ -1,0 +1,22 @@
+.main-title {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333333;
+}
+
+.redirection-link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 22px;
+  text-decoration: none;
+  color: #333333;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='16' viewBox='0 0 10 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.5 8L2 15.5L0.95 14.45L7.4 8L0.95 1.55L2 0.5L9.5 8Z' fill='%23333333'/%3E%3C/svg%3E");
+  }
+}

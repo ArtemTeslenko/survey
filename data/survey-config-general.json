@@ -1,0 +1,292 @@
+{
+  "questionsList": [
+    {
+      "id": "id-1",
+      "screenType": "radio-buttons",
+      "question": "Select your gender:",
+      "options": [
+        { "answerId": "id-a-1", "label": "Female" },
+        { "answerId": "id-a-2", "label": "Male" }
+      ],
+      "nextScreen": {
+        "next": "id-2"
+      }
+    },
+    {
+      "id": "id-2",
+      "screenType": "radio-buttons",
+      "question": "So we can get to know you better, tell us about your relationship status.",
+      "options": [
+        { "answerId": "id-a-3", "label": "Single" },
+        { "answerId": "id-a-4", "label": "In a relationship" }
+      ],
+      "nextScreen": {
+        "id-a-3": "id-3",
+        "id-a-4": "id-4"
+      }
+    },
+    {
+      "id": "id-3",
+      "screenType": "radio-buttons",
+      "question": "Are you a single parent?",
+      "options": [
+        { "answerId": "id-a-5", "label": "Yes" },
+        { "answerId": "id-a-6", "label": "No" }
+      ],
+      "nextScreen": {
+        "next": "id-5"
+      }
+    },
+    {
+      "id": "id-4",
+      "screenType": "radio-buttons",
+      "question": "Are you a parent?",
+      "options": [
+        { "answerId": "id-a-7", "label": "Yes" },
+        { "answerId": "id-a-8", "label": "No" }
+      ],
+      "nextScreen": {
+        "next": "id-6"
+      }
+    },
+    {
+      "id": "id-5",
+      "screenType": "radio-buttons",
+      "replaceable": true,
+      "question": "{Gender} {children} need a slightly different approach to improve their relationship. Which statement best describes you?",
+      "options": [
+        {
+          "answerId": "id-a-9",
+          "label": "I’m very unhappy with how things are going in my relationship"
+        },
+        {
+          "answerId": "id-a-10",
+          "label": "I’m unhappy with parts of my relationship, but some things are working well"
+        },
+        {
+          "answerId": "id-a-11",
+          "label": "I’m generally happy in my relationship"
+        }
+      ],
+      "nextScreen": {
+        "next": "id-7"
+      }
+    },
+    {
+      "id": "id-6",
+      "screenType": "radio-buttons",
+      "replaceable": true,
+      "question": "Single {gender} {children} need a slightly different approach to find their perfect partner. But first, how did you feel in your last relationship?",
+      "options": [
+        {
+          "answerId": "id-a-12",
+          "label": "I was unhappy with low things were going in my relationship"
+        },
+        {
+          "answerId": "id-a-13",
+          "label": "I was unhappy with parts of my relationship, but some thing were working"
+        },
+        {
+          "answerId": "id-a-14",
+          "label": "I was generally happy with my relationship"
+        },
+        {
+          "answerId": "id-a-15",
+          "label": "I’ve never been in a relationship"
+        }
+      ],
+      "nextScreen": {
+        "next": "id-8"
+      }
+    },
+    {
+      "id": "id-7",
+      "screenType": "radio-buttons",
+      "question": "Do you tend to overthink?",
+      "options": [
+        { "answerId": "id-a-16", "label": "Yes" },
+        { "answerId": "id-a-17", "label": "No" }
+      ],
+      "nextScreen": {
+        "next": "id-9",
+        "id-a-16": "id-11",
+        "id-a-17": "id-12"
+      }
+    },
+    {
+      "id": "id-8",
+      "screenType": "radio-buttons",
+      "question": "Is your partner an introvert or extrovert?",
+      "options": [
+        { "answerId": "id-a-18", "label": "Introvert" },
+        { "answerId": "id-a-19", "label": "Extrovert" },
+        { "answerId": "id-a-20", "label": "A bit of both" }
+      ],
+      "nextScreen": {
+        "next": "id-10"
+      }
+    },
+    {
+      "id": "id-9",
+      "screenType": "info-block",
+      "question": "So how does it work?",
+      "description": "We analyze hundreds of data points to create your unique astrological blueprint. This is combined with AI to tailor-make your astrological insights, based on your answers. We’re going to change your relationship with astrology.",
+      "options": [{ "answerId": "id-a-21", "label": "Next" }],
+      "nextScreen": {
+        "next": "info"
+      }
+    },
+    {
+      "id": "id-10",
+      "screenType": "radio-buttons",
+      "question": "What is your partner’s gender?",
+      "options": [
+        { "answerId": "id-a-22", "label": "Male" },
+        { "answerId": "id-a-23", "label": "Female" }
+      ],
+      "nextScreen": {
+        "next": "id-13"
+      }
+    },
+    {
+      "id": "id-11",
+      "screenType": "radio-buttons",
+      "question": "What is most important to you?",
+      "options": [
+        { "answerId": "id-a-24", "label": "Success" },
+        { "answerId": "id-a-25", "label": "Romance" },
+        { "answerId": "id-a-26", "label": "Stability" },
+        { "answerId": "id-a-27", "label": "Freedom" }
+      ],
+      "nextScreen": {
+        "next": "id-15"
+      }
+    },
+    {
+      "id": "id-12",
+      "screenType": "radio-buttons",
+      "question": "Is emotional control tricky for you?",
+      "options": [
+        { "answerId": "id-a-28", "label": "Yes" },
+        { "answerId": "id-a-29", "label": "Sometimes" },
+        { "answerId": "id-a-30", "label": "Rarely" },
+        { "answerId": "id-a-31", "label": "Not at all" }
+      ],
+      "nextScreen": {
+        "next": "id-15"
+      }
+    },
+    {
+      "id": "id-13",
+      "screenType": "radio-buttons",
+      "question": "Do you agree with the statement below?",
+      "description": "“My partner and I make sex a priority in our relationship”",
+      "options": [
+        { "answerId": "id-a-32", "label": "Strongly agree" },
+        { "answerId": "id-a-33", "label": "Agree" },
+        { "answerId": "id-a-34", "label": "Neutral" },
+        { "answerId": "id-a-35", "label": "Disagee" },
+        { "answerId": "id-a-36", "label": "Strongly disagree" }
+      ],
+      "nextScreen": {
+        "next": "id-14"
+      }
+    },
+    {
+      "id": "id-14",
+      "screenType": "radio-buttons",
+      "question": "When you think about your relationship goals, you feel...?",
+      "options": [
+        {
+          "answerId": "id-a-37",
+          "label": "Optimistic! They are totally doable, with some guidance."
+        },
+        {
+          "answerId": "id-a-38",
+          "label": "Cautious. I’ve struggled before, but I’m hopeful."
+        },
+        {
+          "answerId": "id-a-39",
+          "label": "I’m feeling a little anxious, honestly."
+        }
+      ],
+      "nextScreen": {
+        "next": "id-15"
+      }
+    },
+    {
+      "id": "id-15",
+      "screenType": "radio-buttons",
+      "question": "Where did you hear about us?",
+      "options": [
+        {
+          "answerId": "id-a-40",
+          "label": "Poster or Billboard"
+        },
+        {
+          "answerId": "id-a-41",
+          "label": "Friend or Family"
+        },
+        {
+          "answerId": "id-a-42",
+          "label": "Instagram"
+        },
+        {
+          "answerId": "id-a-43",
+          "label": "Direct Mail or Package Insert"
+        },
+        {
+          "answerId": "id-a-44",
+          "label": "Online TV or Streaming TV"
+        },
+        {
+          "answerId": "id-a-45",
+          "label": "TV"
+        },
+        {
+          "answerId": "id-a-46",
+          "label": "Radio"
+        },
+        {
+          "answerId": "id-a-47",
+          "label": "Search Engine (Google, Bing, etc.)"
+        },
+        {
+          "answerId": "id-a-48",
+          "label": "Newspaper or Magazine"
+        },
+        {
+          "answerId": "id-a-49",
+          "label": "Facebook"
+        },
+        {
+          "answerId": "id-a-50",
+          "label": "Blog Post or Website Review"
+        },
+        {
+          "answerId": "id-a-51",
+          "label": "Podcast"
+        },
+        {
+          "answerId": "id-a-52",
+          "label": "Influencer"
+        },
+        {
+          "answerId": "id-a-53",
+          "label": "Youtube"
+        },
+        {
+          "answerId": "id-a-54",
+          "label": "Pinterest"
+        },
+        {
+          "answerId": "id-a-55",
+          "label": "Other"
+        }
+      ],
+      "nextScreen": {
+        "next": "answers"
+      }
+    }
+  ]
+}

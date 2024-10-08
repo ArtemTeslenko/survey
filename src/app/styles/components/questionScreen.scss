@@ -1,0 +1,36 @@
+body {
+  .question {
+    margin-bottom: 30px;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  .answers {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &-description {
+      margin-bottom: 30px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 28px;
+    }
+  }
+
+  &.dark {
+    .question,
+    .answers-description {
+      color: #fbfbff;
+    }
+
+    .answers-description {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 25px;
+    }
+  }
+}
