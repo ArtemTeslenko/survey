@@ -13,8 +13,8 @@ To run the project, follow these steps:
 Clone this repository to your local machine:
 
 ```bash
-git clone <url_of_repository>
-cd my-survey-app
+git clone https://github.com/ArtemTeslenko/survey.git
+cd survey
 ```
 
 ### 2. Install dependencies
